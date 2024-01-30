@@ -136,18 +136,25 @@ main {
     text-decoration: none;
 }
 
-.agency-card {
-    border: 1px solid rgb(219, 219, 219);
-    border-radius: 20px;
-    color: grey;
-}
-
+.agency-card,
 .agency-card-middle {
     border: 1px solid rgb(219, 219, 219);
     border-radius: 20px;
+    color: grey;
+    background-color: white;
+    transition: 0.8s background-color;
+}
+
+.agency-card-middle {
     margin-left: 15px;
     margin-right: 15px;
-    color: grey;
+}
+
+.agency-card:hover,
+.agency-card-middle:hover {
+    background-color: rgb(235, 235, 235);
+    transition-delay: 0s;
+    cursor: pointer;
 }
 
 .agency-card h3,
