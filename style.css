@@ -127,6 +127,7 @@ main {
 }
 
 .agency-title h3 {
+    padding-left: 0;
     font-weight: bold;
 }
 
@@ -137,6 +138,26 @@ main {
 .agency-card {
     border: 1px solid rgb(219, 219, 219);
     border-radius: 20px;
+    color: grey;
+}
+
+.agency-card-middle {
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+    color: grey;
+}
+
+.agency-card h3,
+.agency-card-middle h3 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.agency-card p,
+.agency-card-middle p {
+    font-size: 15px;
 }
 
 footer {
