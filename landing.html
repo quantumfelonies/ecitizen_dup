@@ -6,16 +6,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 
+  <!-- Font Awesome Kit -->
   <script src="https://kit.fontawesome.com/0e4ad45b15.js" crossorigin="anonymous"></script>
-
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -23,30 +24,25 @@
 
     <!-- Header -->
     <header>
-      <nav class="navbar navbar-expand-lg py-4 mx-4">
-        <div class="container-fluid d-flex justify-content-between">
-          <div>
-            <a class="nav-link" href="" title="Go to the homepage">
-              <img src="images/logo.png" height="50" alt="eCitizen logo">
-            </a>
-          </div>
+      <nav class="navbar navbar-expand-lg py-3 mx-4">
+        <div class="container-fluid navbar-nav d-flex justify-content-between">
+          <a class="nav-link me-5" href="#" title="Go to the homepage">
+            <img src="images/logo.png" height="50" alt="eCitizen logo">
+          </a>
 
-          <div class="navbar-nav">
-            <a class="nav-link" href="" title="Navigate to home page"> Home</a>
-            <a class="nav-link" href="" title="Navigate to national ministries page"> National</a>
-            <a class="nav-link" href="" title="Navigate to counties page"> Counties</a>
-            <a class="nav-link" href="" title="Navigate to Support and FAQs page"> Help &amp; Support</a>
-          </div>
+          <a class="nav-link ms-5" href="#" title="Navigate to home page"> Home</a>
+          <a class="nav-link" href="#" title="Navigate to national ministries page"> National</a>
+          <a class="nav-link" href="#" title="Navigate to counties page"> Counties</a>
+          <a class="nav-link me-5" href="#" title="Navigate to Support and FAQs page"> Help &amp; Support</a>
 
-          <div class="navbar-nav">
-            <a class="nav-link" href="" title="Click here to search"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a class="nav-link" href="" title="Navigate to the login page"> Sign in</a>
-            <a class="register-btn" href="" title="Navigate to the registration page">
-              Register</a>
-            <a class="nav-link blue-icon" href="" title="Choose Language to Translate"> <i
-                class="fa-solid fa-globe"></i></a>
-            <a class="nav-link blue-icon" href="" title="Change Accessibility"> <i class="fa-solid fa-person"></i></a>
-          </div>
+          <button class="search-btn ms-5" title="Click here to search"><i
+              class="fa-solid fa-magnifying-glass"></i></button>
+          <button class="sign-btn" title="Navigate to the login page">Sign in</button>
+          <button class="register-btn" title="Navigate to the registration page">Register</button>
+
+          <a class="nav-link blue-icon" href="" title="Choose Language to Translate"> <i
+              class="fa-solid fa-globe"></i></a>
+          <a class="nav-link blue-icon" href="" title="Change Accessibility"> <i class="fa-solid fa-person"></i></a>
         </div>
       </nav>
     </header>
@@ -55,18 +51,18 @@
     <main>
       <!-- Hero -->
       <div class="container-fluid hero-image">
-        <div class="hero-text pt-5 pb-2 ps-4">
+        <div class="hero-text pt-5 pb-2 ps-5">
           <h1>
             <br>
             <br>
-            Government of Kenya services simplified <br>
-            All your government records unified
+            Government of Kenya services <strong>simplified</strong> <br>
+            All your government records <strong>unified</strong>
           </h1>
         </div>
 
-        <div class="hero-section mt-4 mx-4">
+        <div class="hero-section mt-4 mx-5">
           <div class="d-flex justify-content-center">
-            <form class="my-4">
+            <form class="my-5">
               <input class="hero-search"
                 placeholder="&#xF002; Type name of service, ministry, department, agency etc..."
                 style="font-family:Josefin Sans, FontAwesome">
@@ -131,26 +127,28 @@
         </div>
       </div>
 
-      <!-- Rounded Card -->
-      <div class="container-fluid rounded-image">
-        <div class="rounded-text">
-          <h2>
-            Over 5,000 Government services now available from 100+ Ministries, Counties, Departments and Agencies.
-          </h2>
-        </div>
-
-        <div class="row">
-          <div class="col">
-            Get started on eCitizen today
+      <!-- Rounded Image -->
+      <div class="container-fluid">
+        <div class="rounded-image mx-5">
+          <div class="row py-4 px-4">
+            <div class="col-8 py-2">
+              <h2>
+                Over <strong>5,000</strong> Government services now available from <strong>100+</strong> Ministries,
+                Counties, Departments and Agencies.
+              </h2>
+            </div>
           </div>
 
-          <div class="col">
-            <a href="" title="Go to the login page">
-              Sign in
-            </a>
-            <a href="" title="Go to the registration page">
-              Register
-            </a>
+          <div class="rounded-image-section py-4 px-4">
+            <div class="row">
+              <div class="col-10">
+                <h3>Get started on eCitizen today</h3>
+              </div>
+              <div class="col">
+                <button class="sign-btn-light" title="Navigate to the login page">Sign in</button>
+                <button class="register-btn" title="Navigate to the registration page">Register</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -305,6 +303,7 @@
         </p>
       </div>
     </footer>
+
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
