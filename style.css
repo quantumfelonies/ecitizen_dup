@@ -60,7 +60,7 @@ header .navbar-nav a {
 }
 
 main {
-    background-color: purple;
+    background-color: white;
 }
 
 .hero-image {
@@ -124,6 +124,19 @@ main {
 .sign-btn-light:hover {
     background-color: rgb(235, 235, 235);
     transition-delay: 0s;
+}
+
+.agency-title h3 {
+    font-weight: bold;
+}
+
+.agency-title a {
+    text-decoration: none;
+}
+
+.agency-card {
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 20px;
 }
 
 footer {
