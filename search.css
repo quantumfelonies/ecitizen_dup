@@ -187,6 +187,43 @@ main {
     font-size: 13px;
 }
 
+.search-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .search-option {
+    background-color: white;
+    border: 1px solid #999;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+
+  .search-option a {
+    text-decoration: none; 
+    color: inherit; 
+    display: block; 
+    padding: 20px;
+  }
+  
+  .search-option:hover {
+    background-color: #ccc;
+  }
+  
+  i {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
 footer {
     background-color: rgb(28, 28, 28);
     color: white;
