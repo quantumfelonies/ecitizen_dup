@@ -49,6 +49,7 @@
 
     <!-- Main -->
     <main>
+
       <!-- Hero -->
       <div class="container-fluid hero-image">
         <div class="hero-text pt-5 pb-2 ps-5">
@@ -62,11 +63,135 @@
 
         <div class="hero-section mt-4 mx-4">
           <div class="d-flex justify-content-center">
-            <form class="my-5">
-              <input class="hero-search"
-                placeholder="&#xF002; Type name of service, ministry, department, agency etc..."
-                style="font-family: Poppins, FontAwesome">
+            <form class="hero-form mt-5 mb-0" onsubmit="return false;" id="searchForm">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input class="hero-search ps-5" placeholder="Type name of service, ministry, department, agency etc..."
+                onclick="showResults()">
             </form>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <div class="hero-search-results mt-0" id="searchResults">
+              <ul class="hero-search-list">
+                <li class="hero-search-filter">
+                  <p> Filters:
+                    <button class="hero-filter ms-2">Ministry</button>
+                    <button class="hero-filter">Department</button>
+                    <button class="hero-filter">Agency</button>
+                    <button class="hero-filter">County</button>
+                    <button class="hero-filter">County Service</button>
+                    <button class="hero-filter">National Service</button>
+                  </p>
+                </li>
+                <li class="hero-search-card">
+                  <a href="#">
+                    <div>
+                      <h3>Coca-Cola</h3>
+                      <button id="hero-search-ad">Ad</button>
+                      <button id="hero-search-ad-link"><a href="https://www.coca-cola.com/ke/en">Learn More <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+                      <p>Refresh your day with the crisp, bubbly perfection of Coca-Cola. Unwind and savor moments with
+                        the iconic taste you love.</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="hero-search-card">
+                  <a href="#">
+                    <div>
+                      <h3>Betika</h3>
+                      <button id="hero-search-ad">Ad</button>
+                      <button id="hero-search-ad-link"><a href="https://www.betika.com/en-ke/">Learn More <i
+                            class="fa-solid fa-arrow-up-right-from-square"></i></a></button>
+                      <p>Register for a betting account with Betika and you stand the chance to win big and bag the
+                        bragging rights with your sports-loving friends.</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="hero-search-card">
+                  <a href="#">
+                    <div>
+                      <h3>Passport Application</h3>
+                      <button>Ministry</button>
+                      <p> Pursuant to section 27(1) of the Kenya Citizenship and Immigration Act 2011 as read with
+                        section
+                        12
+                        of the Kenya Citizenship and Immigration Regulation 2012, legal notice No. 64, all applicants
+                        are
+                        required to complete Form 19 (available online) as the Kenya Passport Application Form set out
+                        in
+                        the
+                        first
+                        schedule of the Regulations.</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="hero-search-card">
+                  <a href="#">
+                    <div>
+                      <h3>Registration Of Civil Marriage(Both Kenyan Nationals) - Special Licences</h3>
+                      <button>Ministry</button>
+                      <p> Special license for Civil marriages Where both parties are Kenyan nationals Fill the online
+                        application form Attach: Copy of National Identity Card or valid Passport or valid Alien Card
+                        for
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="hero-search-card">
+                  <a href="#">
+                    <div>
+                      <h3>Registration Of Civil Marriage (Both Foreigners) - Special Licences</h3>
+                      <button>Ministry</button>
+                      <p> Special license for Civil marriages Where both parties are foreign nationals Create a visitors
+                        E-citizen account Fill an online application form Attach: Copies of valid Passports Copies of
+                        Birth
+                        Certificates
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="hero-search-card">
+                  <a href="#">
+                    <div>
+                      <h3>Registration Of Hindu Marriage(Both Foreigners) - Special License</h3>
+                      <button>Ministry</button>
+                      <p>Where both parties are foreign nationals Create a Visitors E-citizen account Fill an online
+                        application form Attach: Copy of valid Passport Copy of Birth Certificate 1 Coloured
+                        passport-size
+                        photo Proof</p>
+                    </div>
+                  </a>
+                </li>
+                <li class="hero-search-card">
+                  <a href="#">
+                    <div>
+                      <h3>Registration Of Hindu Marriage(Both Kenyan Nationals) - Special Licences</h3>
+                      <button>Ministry</button>
+                      <p> Special license for Hindu marriage Where both parties are Kenyan nationals Fill online
+                        application
+                        form Attach: Copy of National Identity Card or valid Passport or Valid Alien Card for refugees
+                      </p>
+                    </div>
+                  </a>
+                </li>
+
+                <li class="hero-search-card">
+                  <a href="#">
+                    <div>
+                      <h3>Endorsement</h3>
+                      <button>Ministry</button>
+                      <p>Section 8(1) of the Kenya Citizenship and Immigration Regulation 2012 provides that the
+                        passport
+                        of
+                        any other country that is held by a dual citizen may, upon application by the holder, be
+                        endorsed
+                        to
+                        indicate that the holder is a citizen of Kenya.</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
 
           <div class="container hero-search-text py-4">
@@ -521,6 +646,24 @@
     </footer>
 
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script>
+    function showResults() {
+      $('#searchResults').toggleClass('show');
+      $('.hero-search').addClass('clicked');
+    }
+
+    // clicked outside
+    $(document).on('click', function (e) {
+      if (!$(e.target).closest('.hero-search').length) {
+        $('.hero-search').removeClass('clicked');
+      }
+      if (!$(e.target).closest('.hero-search-results, .hero-search').length) {
+        $('#searchResults').removeClass('show');
+      }
+    });
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"

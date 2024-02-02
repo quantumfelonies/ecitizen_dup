@@ -11,7 +11,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-
 @media (max-width: 767px) {
     .col {
         margin-top: 0;
@@ -26,6 +25,8 @@ body {
     padding: 0;
     margin: 0;
 }
+
+/* header */
 
 header {
     background-color: white;
@@ -70,11 +71,13 @@ header .navbar-nav a {
     color: #3482FF;
 }
 
+/* main */
 main {
     background-color: white;
     background-color: white;
 }
 
+/* main */
 .hero-image {
     background-image: url('images/hero_image.jpg');
     background-repeat: no-repeat;
@@ -91,13 +94,35 @@ main {
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
     backdrop-filter: blur(5px);
+    position: relative;
+}
+
+.hero-form {
+    width: 100%;
+    text-align: center;
+}
+
+.hero-form i {
+    position: absolute;
+    color: grey;
+    font-size: 18px;
+    margin-left: 20px;
+    margin-top: 15px;
 }
 
 .hero-search {
-    width: 85vw;
+    width: 90%;
     padding: 10px;
-    border-radius: 50px;
+    border-radius: 25px;
+    border-bottom: 2px solid #e9ecf2;
     border-style: none;
+    margin: auto;
+}
+
+.hero-search.clicked {
+    border-bottom: 2px solid #e9ecf2;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .hero-search-text {
@@ -108,13 +133,169 @@ main {
     font-size: 40px;
 }
 
+#searchResults {
+    overflow-y: scroll;
+    height: 400px;
+    border-bottom: 2px solid #e9ecf2;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.hero-search-results {
+    position: absolute;
+    width: 90%;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.hero-search-results.show {
+    display: block;
+}
+
+.hero-search-list {
+    list-style: none;
+    color: black;
+    padding: 0;
+    margin: 0;
+}
+
+.hero-search-filter {
+    background-color: white;
+    text-align: left;
+    border-bottom: 2px solid #e9ecf2;
+    padding-top: 10px;
+    padding-left: 30px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.hero-filter {
+    all: unset;
+    color: #3482FF;
+    border-radius: 30px;
+    border: 1px solid #3482FF;
+    padding: 5px 10px;
+    background-color: white;
+    transition: 0.8s background-color;
+}
+
+.hero-filter:hover {
+    background-color: #c0cbdf;
+    transition-delay: 0s;
+}
+
+.hero-search-card {
+    color: #818895;
+    background-color: white;
+    text-align: left;
+    border-bottom: 2px solid #e9ecf2;
+    transition: 0.8s background-color;
+    padding: 10px 30px;
+}
+
+.hero-search-card:hover {
+    background-color: #eef3fe;
+    transition-delay: 0s;
+}
+
+.hero-search-card a {
+    text-decoration: none;
+}
+
+.hero-search-card a h3 {
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.hero-search-card a button {
+    all: unset;
+    color: #02a83e;
+    background-color: #c8e8dc;
+    padding: 3px 20px;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+#hero-search-ad {
+    all: unset;
+    color: #3482FF;
+    background-color: #c8dce8;
+    padding: 3px 20px;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+#hero-search-ad-link {
+    all: unset;
+    color: black;
+    font-size: 15px;
+    margin-left: 10px;
+}
+
+#hero-search-ad-link i {
+    font-size: 15px;
+}
+
+#hero-search-ad-link:hover {
+    all: unset;
+    color: #02a83e;
+}
+
+.hero-search-card a p {
+    margin-top: 10px;
+    color: #818895;
+    font-size: 14px;
+}
+
+.search-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.search-option {
+    background-color: white;
+    border: 1px solid #999;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.search-option a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 20px;
+}
+
+.search-option:hover {
+    background-color: #ccc;
+}
+
+i {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+
 .rounded-image {
     background-image: url('images/banner-1.jpg');
-    background-repeat: no-repeat;
     background-size: cover;
+    background-position: 100% 100%;
     color: white;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    padding: 40px;
 }
 
 .rounded-image-section {
