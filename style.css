@@ -135,7 +135,7 @@ main {
 
 #searchResults {
     overflow-y: scroll;
-    height: 400px;
+    height: 300px;
     border-bottom: 2px solid #e9ecf2;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
