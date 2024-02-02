@@ -11,7 +11,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-
 @media (max-width: 767px) {
     .col {
         margin-top: 0;
@@ -101,6 +100,7 @@ main {
 .hero-form i {
     position: absolute;
     color: grey;
+    font-size: 18px;
     margin-left: 20px;
     margin-top: 15px;
 }
@@ -111,7 +111,7 @@ main {
     border-top-right-radius: 25px;
     border-top-left-radius: 25px;
     border-style: none;
-    border-bottom: 1px solid grey;
+    border-bottom: 2px solid #e9ecf2;
 }
 
 .hero-search-text {
@@ -134,40 +134,55 @@ main {
     margin: 0;
 }
 
-.hero-search-card {
+.hero-search-filter {
     background-color: white;
     text-align: left;
-    border-bottom: 1px solid grey;
-    padding: 15px;
+    border-bottom: 2px solid #e9ecf2;
+    padding-top: 10px;
+    padding-left: 30px;
+    font-size: 12px;
+    font-weight: bold;
 }
 
-.hero-search-card {
+.hero-filter {
+    all: unset;
+    color: #3482FF;
+    border-radius: 30px;
+    border: 1px solid #3482FF;
+    padding: 5px 10px;
     background-color: white;
     transition: 0.8s background-color;
 }
 
+.hero-filter:hover {
+    background-color: #c0cbdf;
+    transition-delay: 0s;
+}
+
+.hero-search-card {
+    color: #818895;
+    background-color: white;
+    text-align: left;
+    border-bottom: 2px solid #e9ecf2;
+    transition: 0.8s background-color;
+    padding: 10px 30px;
+}
+
 .hero-search-card:last-child {
-    border-bottom: 1px solid grey;
-    border-left: 1px solid grey;
-    border-right: 1px solid grey;
+    border-bottom: 2px solid #e9ecf2;
+    border-left: 2px solid #e9ecf2;
+    border-right: 2px solid #e9ecf2;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
 }
 
 .hero-search-card:hover {
-    background-color: rgb(216, 216, 216);
+    background-color: #eef3fe;
     transition-delay: 0s;
 }
 
 .hero-search-card a {
     text-decoration: none;
-    background-color: white;
-    transition: 0.8s background-color;
-}
-
-.hero-search-card a:hover {
-    background-color: green;
-    transition-delay: 0s;
 }
 
 .hero-search-card a h3 {
@@ -176,24 +191,38 @@ main {
     font-weight: bold;
 }
 
-.hero-search-card a h4 {
-    color: blue;
-    font-weight: bold;
-    font-size: 15px;
+
+.hero-search-card a button {
+    all: unset;
+    color: #02a83e;
+    background-color: #c8e8dc;
+    padding: 3px 20px;
+    font-size: 12px;
+    border-radius: 20px;
+}
+
+#hero-search-ad {
+    all: unset;
+    color: #3482FF;
+    background-color: #c8dce8;
+    padding: 3px 20px;
+    font-size: 12px;
+    border-radius: 20px;
 }
 
 .hero-search-card a p {
-    color: black;
-    font-size: 13px;
+    margin-top: 10px;
+    color: #818895;
+    font-size: 14px;
 }
 
 .search-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
-  }
-  
-  .search-option {
+}
+
+.search-option {
     background-color: white;
     border: 1px solid #999;
     padding: 20px;
@@ -206,23 +235,23 @@ main {
     justify-content: center;
     border-radius: 10px;
     transition: background-color 0.3s ease;
-  }
+}
 
-  .search-option a {
-    text-decoration: none; 
-    color: inherit; 
-    display: block; 
+.search-option a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
     padding: 20px;
-  }
-  
-  .search-option:hover {
+}
+
+.search-option:hover {
     background-color: #ccc;
-  }
-  
-  i {
+}
+
+i {
     font-size: 24px;
     margin-bottom: 10px;
-  }
+}
 
 footer {
     background-color: rgb(28, 28, 28);
