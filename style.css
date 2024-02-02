@@ -287,18 +287,26 @@ i {
     margin-bottom: 10px;
 }
 
-
+/* Carousel*/
 .rounded-image {
-    background-image: url('images/banner-1.jpg');
-    background-size: cover;
-    background-position: 100% 100%;
     color: white;
+    height: 400px;
+    box-sizing: border-box;
+    background-color: purple;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
-    padding: 40px;
+}
+
+.carousel-item {
+    background-size: cover;
+    background-position: 100% 100%;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
 }
 
 .rounded-image-section {
+    margin-top: 50px;
+    padding: 0 150px;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
     border-bottom-left-radius: 25px;
@@ -310,15 +318,27 @@ i {
     color: black;
     border-radius: 30px;
     padding: 5px 10px;
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(188, 188, 188);
     transition: 0.8s background-color;
+    margin-right: 20px;
 }
 
 .sign-btn-light:hover {
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(255, 255, 255);
     transition-delay: 0s;
 }
 
+#rounded-image-ad-link {
+    all: unset;
+    color: black;
+    font-size: 15px;
+}
+
+#rounded-image-ad-link i {
+    font-size: 20px;
+}
+
+/* Agency */
 .agency-title h3 {
     padding-left: 0;
     font-weight: bold;
@@ -362,6 +382,7 @@ i {
     font-size: 15px;
 }
 
+/* Counties */
 .counties .row {
     margin-bottom: 20px;
 }
@@ -421,6 +442,7 @@ i {
     text-decoration: none;
 }
 
+/* Single Point */
 .single-point {
     padding: 20px;
     text-align: left;
@@ -446,6 +468,7 @@ i {
     color: grey;
 }
 
+/* Footer */
 footer {
     background-color: #272E28;
     color: white;
