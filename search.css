@@ -124,7 +124,6 @@ main {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     max-width: 600px;
-    /* Adjust as needed */
 }
 
 .container.hero-search-text {
@@ -150,7 +149,7 @@ main {
 }
 
 .hero-search-results {
-    width: 90%;
+    width: 100%;
     margin: auto;
 }
 
@@ -186,13 +185,33 @@ main {
     transition-delay: 0s;
 }
 
+.hero-search-related {
+    color: black;
+    background-color: white;
+    text-align: left;
+    padding: 10px 30px;
+    border-left: 2px solid #e9ecf2;
+    border-right: 2px solid #e9ecf2;
+    transition: 0.8s background-color;
+}
+
 .hero-search-card {
     color: #818895;
     background-color: white;
     text-align: left;
     border-bottom: 2px solid #e9ecf2;
+    border-left: 2px solid #e9ecf2;
+    border-right: 2px solid #e9ecf2;
     transition: 0.8s background-color;
     padding: 10px 30px;
+}
+
+.hero-search-card:first-child {
+    border-bottom: 2px solid #e9ecf2;
+    border-left: 2px solid #e9ecf2;
+    border-right: 2px solid #e9ecf2;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
 .hero-search-card:last-child {
