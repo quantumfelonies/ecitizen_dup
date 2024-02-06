@@ -288,29 +288,27 @@ i {
 }
 
 /* Carousel*/
+.carousel-inner {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    overflow: hidden;
+}
+
 .rounded-image {
     color: white;
     height: 400px;
     box-sizing: border-box;
-    background-color: purple;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
 }
 
 .carousel-item {
     background-size: cover;
     background-position: 100% 100%;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
 }
 
 .rounded-image-section {
-    margin-top: 50px;
     padding: 0 150px;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
 }
 
 .sign-btn-light {
@@ -334,11 +332,11 @@ i {
     font-size: 15px;
 }
 
-#rounded-image-ad-link i {
-    font-size: 20px;
+/* Agency */
+.agency {
+    padding: 0 200px;
 }
 
-/* Agency */
 .agency-title h3 {
     padding-left: 0;
     font-weight: bold;
