@@ -288,6 +288,11 @@ i {
 }
 
 /* Rounded Carousel*/
+.carousel-control-prev i,
+.carousel-control-next i {
+    font-size: 50px;
+}
+
 .carousel-inner {
     color: white;
     overflow: hidden;
@@ -300,10 +305,12 @@ i {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 100% 100%;
+    overflow: hidden;
 }
 
 .rounded-text h2 {
     padding: 0 150px;
+    margin-top: 50px;
 }
 
 .rounded-image-section {
@@ -372,8 +379,9 @@ i {
     color: grey;
     background-color: white;
     transition: 0.8s background-color;
-    height: 230px;
+    height: 250px;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .agency-card-middle {
@@ -480,11 +488,7 @@ i {
 
 .partner-list img {
     width: 200px;
-    padding: 20px;
-}
-
-.partner-carousel {
-    background-color: white;
+    padding: 0 30px;
 }
 
 /* Single Point */

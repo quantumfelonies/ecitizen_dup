@@ -263,52 +263,57 @@
         <div id="roundedCarousel" class="carousel slide mx-4" data-bs-ride="carousel">
           <div class="carousel-inner">
 
+            <!-- Carousel Item 1 -->
             <div class="carousel-item active" style="background-image: url('images/banner-1.jpg')">
 
-              <div class="row rounded-text py-5">
-                <div class="col">
-                  <h2>
-                    Over <strong>5,000</strong> Government services now available from <strong>100+</strong>
-                    Ministries, 3 Counties, Departments and Agencies.
-                  </h2>
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div class="row rounded-text py-4">
+                  <div class="col">
+                    <h2>
+                      Over <strong>5,000</strong> Government services now available from <strong>100+</strong>
+                      Ministries, 3 Counties, Departments and Agencies.
+                    </h2>
+                  </div>
+                </div>
+
+                <div class="row rounded-image-section py-5">
+                  <div class="col">
+                    <h3>Get started on eCitizen today</h3>
+                  </div>
+
+                  <div class="col text-end">
+                    <button class="ad-button-light" title="Navigate to the login page">Sign in</button>
+                    <button class="ad-button-green" title="Navigate to the registration page">Register</button>
+                  </div>
                 </div>
               </div>
-
-              <div class="row rounded-image-section py-5">
-                <div class="col">
-                  <h3>Get started on eCitizen today</h3>
-                </div>
-
-                <div class="col text-end">
-                  <button class="ad-button-light" title="Navigate to the login page">Sign in</button>
-                  <button class="ad-button-green" title="Navigate to the registration page">Register</button>
-                </div>
-              </div>
-
             </div>
 
+            <!-- Carousel Item 2 -->
             <div class="carousel-item" style="background-image: url('images/cocacola.webp')">
 
-              <div class="row rounded-text py-5">
-                <div class="col">
-                  <h2>
-                    <strong>Coca-Cola</strong>
-                    <br>
-                    Refresh your day with the crisp, bubbly perfection of Coca-Cola.
-                    Unwind and savor moments with
-                    the iconic taste you love.
-                  </h2>
-                </div>
-              </div>
-
-              <div class="row rounded-image-section py-5">
-                <div class="col">
-                  <h3>Learn More</h3>
+              <div class="d-flex flex-column justify-content-between h-100">
+                <div class="row rounded-text py-4">
+                  <div class="col">
+                    <h2>
+                      <strong>Coca-Cola</strong>
+                      <br>
+                      Refresh your day with the crisp, bubbly perfection of Coca-Cola. Unwind and savor moments
+                      with
+                      the iconic taste you love.
+                    </h2>
+                  </div>
                 </div>
 
-                <div class="col text-end">
-                  <a id="rounded-image-ad-link" href="https://www.coca-cola.com/ke/en"><i
-                      class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                <div class="row rounded-image-section py-5">
+                  <div class="col">
+                    <h3>Learn More</h3>
+                  </div>
+
+                  <div class="col text-end">
+                    <a id="rounded-image-ad-link" href="https://www.coca-cola.com/ke/en"><i
+                        class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                  </div>
                 </div>
               </div>
 
@@ -352,8 +357,7 @@
             </div>
             <hr>
             <h3>National Transport And Safety Authority (NTSA) (New)</h3>
-            <p>Dedicated platform for Application and Renewal of Driving Licence, Driving School Management and
-              PSV
+            <p>Dedicated platform for Application and Renewal of Driving Licence, Driving School Management and PSV
               related services
             </p>
           </div>
@@ -608,7 +612,7 @@
         </div>
 
         <div class="partner-list">
-          <ul id="lightSlider">
+          <ul id="lightSlider" class="d-flex justify-content-center align-items-center flex-wrap">
             <li>
               <img src="images/aar.png">
             </li>
@@ -750,6 +754,7 @@
         slideMove: 1,
         slideMargin: 0,
         controls: true,
+        loop: true,
         prevHtml: '<span><i class="fa fa-angle-left" aria-hidden="true"></i></span>',
         nextHtml: '<span><i class="fa fa-angle-right" aria-hidden="true"></i></span>',
       });
